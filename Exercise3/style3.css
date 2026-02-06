@@ -1,0 +1,68 @@
+.container{  
+    display: flex;
+    flex-direction: row;
+}
+ 
+.item {
+    flex: 1;
+
+    padding: 20px;
+    margin: 5px;
+    background-color: lightblue;
+    border: 1px solid darkblue;
+    text-align: center;
+}
+.item img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    background-color: #555;
+}
+
+/* Navbar hover effect */
+.navbar:hover {
+    background-color: #333;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Link hover */
+.nav-item a:hover {
+    background-color: #bdbbbb;
+    color: black;
+}
+
+/* DROPDOWN */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 150px;
+}
+
+.dropdown a {
+    color: black;
+    padding: 10px;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown {
+    display: block;
+}
